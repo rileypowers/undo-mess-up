@@ -131,6 +131,7 @@ function generateShowQuestion(questionObject) {
   `
 }
 
+
 //My question that is currently undefined
 function showQuestion() {
   // render one question to the dom
@@ -166,13 +167,18 @@ function whatNumberQuestion() {
   `)
 }
 
+function hideAndShow() {
+  $('.question-box').addClass('.pageOneQuestion');
+  $('.pageOneQuestion').removeClass();
+}
 
 //create a function that shows questions in the dom when .startBtn is clicked, hides the button pushed, and puts a new button in its place.
 function startQuiz() {
   $('.startBtn').click(function () {
     console.log('hi')
 
-    showQuestion();
+    hideAndShow();
+    // showQuestion();
     hideStartButton();
     whatNumberQuestion();
 

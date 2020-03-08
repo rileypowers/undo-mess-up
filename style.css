@@ -121,6 +121,10 @@ html {
   z-index: 1;
 }
 
+.pageOneQuesions {
+  display: none;
+}
+
 .btn{
   text-size: 18px;
   position: absolute;
